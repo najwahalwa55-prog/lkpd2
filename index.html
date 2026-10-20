@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Registrasi</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+  body {
+    background-color: #eef1f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .card {
+    background: white;
+    width: 380px;
+    padding: 30px 35px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  .card h2 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .card .subtitle {
+    text-align: center;
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  label {
+    font-size: 11px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 12px;
+  }
+  input, select {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    font-size: 11px;
+    outline: none;
+    background: white;
+  }
+  input::placeholder {
+    color: #bbb;
+    font-size: 11px;
+  }
+  select {
+    color: #666;
+  }
+  .btn-daftar {
+    width: 100%;
+    background-color: #1a56ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 22px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .btn-daftar:hover {
+    background-color: #0f46e0;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Registrasi Akun Belajar</h2>
+  <p class="subtitle">Lengkapi formulir di bawah ini dengan benar</p>
+  <label>Nama Lengkap</label>
+  <input type="text" placeholder="Masukkan nama lengkap">
+
+  <label>Alamat Email</label>
+  <input type="email" placeholder="nama@contoh.com">
+
+  <label>Kata Sandi</label>
+  <input type="password" placeholder="Minimal 8 karakter">
+
+  <label>Konfirmasi Kata Sandi</label>
+  <input type="password" placeholder="Ulangi kata sandi">
+
+  <label>Status Pengguna</label>
+  <select>
+    <option value="">Pilih status</option>
+    <option value="siswa">Siswa</option>
+    <option value="guru">Guru</option>
+    <option value="umum">Umum</option>
+  </select>
+
+  <button class="btn-daftar">Daftar</button>
+</div>
+
+</body>
+</html>
